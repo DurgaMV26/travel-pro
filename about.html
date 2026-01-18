@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>travelX</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/TXlogo.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Playfair", serif;
+            background-color: #f8e7d2;
+        }
+
+        /* Navbar */
+    .navbar {
+      background-color: #16b19f !important;
+    }
+    .navbar .nav-link {
+      color: #ffffff !important;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .navbar .nav-link:hover {
+      color: #f6c90e !important;
+    }
+    .navbar .nav-link.active {
+      color: #3a3a8d !important;
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 6px 12px;
+    }
+        /* Hero Section */
+        .hero-section {
+            background: url('./assets/about2.jpg') center/cover no-repeat;
+            color: white;
+            height: 80vh;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Team Image */
+        .team-img {
+            width: 100%;
+            border-radius: 50%;
+            height: 180px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        /* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #1ebe5d;
+}
+
+/* Toggle animation effect (optional) */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+.whatsapp-float {
+  animation: pulse 2s infinite;
+}
+
+
+        /* Footer */
+        footer {
+            background-color: #7fb5d4;
+            color: white;
+            padding: 40px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./assets/TXlogo.png" alt="Logo" width="120" height="50" class="me-2" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active " href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="package.html">Packages</a></li>
+                              <li class="nav-item"><a class="nav-link" href="taxi.html">Our Services</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center justify-content-center" data-aos="fade-in">
+        <div class="text-center">
+            <h1 class="display-4 fw-bold">Crafting Journeys That Speak to the Soul</h1>
+            <p class="lead mt-3">At travelX, travel isn’t just about destinations – it’s about moments, emotions, and
+                memories that stay forever.</p>
+        </div>
+    </section>
+
+    
+
+    <!-- From Local Wonders Section -->
+    <section class="py-5 bg-white text-dark" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold ">From Local Wonders to Global Love Stories</h2>
+                <p class="fs-6">We create immersive experiences that let you discover beauty, culture, and connection — wherever your
+                    heart takes you.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="./assets/about-2.jpg" alt="Local Wonders" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-md-6 pt-3   " data-aos="fade-left">
+    <p class="fs-5">
+        <strong>travelX</strong> is a passionate travel agency dedicated to creating meaningful journeys that go beyond destinations. From romantic honeymoons and peaceful hill retreats to family vacations and cultural escapes, we design experiences that match your dreams and travel style. Every itinerary is thoughtfully crafted to ensure comfort, beauty, and unforgettable moments.
+    </p>
+
+    <p class="fs-5">
+        At travelX, we believe travel should feel personal, seamless, and inspiring. Our expert team focuses on carefully curated routes, trusted partners, and attentive service, ensuring a stress-free journey from start to finish. We take care of every detail so you can fully enjoy each moment. Whether you’re exploring misty mountains, golden beaches, serene backwaters, or soulful landscapes, travelX transforms every trip into a meaningful experience and a story worth remembering.
+    </p>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why TravelX Section -->
+    <section class="py-5 text-dark text-center" style="background-color:#fef7f2;" data-aos="fade-up">
+        <div class="container">
+            <h2 class="fw-bold mb-5">Why travelX?</h2>
+            <div class="row gy-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="./assets/about-3.jpg" alt="Tailor-Made" class="img-fluid mb-3" style="height:200px;">
+                    <h5><strong>Tailor-Made Itineraries</strong></h5>
+                    <p class="fs-5">Curated with your interests, pace, and preferences in mind.</p>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="./assets/about-4.jpg" alt="Romantic Touch" class="img-fluid mb-3" style="height:200px;">
+                    <h5><strong>Romantic Touches</strong></h5>
+                    <p class="fs-5">We add the sparkle – surprise gestures, secret spots, and sunset dinners.</p>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="./assets/about-5.jpg" alt="Pickup and Drop" class="img-fluid mb-3" style="height:200px;">
+                    <h5><strong>Pickup & Drop Assistance</strong></h5>
+                    <p class="fs-5">From your doorstep to your dream spot — our reliable transfer services ensure a smooth, safe, and
+                        stress-free start and end to your journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Journey Section -->
+    <section class="py-5 bg-white text-dark text-center" data-aos="fade-up">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Our Journey</h2>
+            <p class="fs-5">travelX Holidays was born from a shared dream among a group of friends from diverse professional backgrounds—Medical, IT, Management, and Entrepreneurship—united by one common passion: delivering exceptional travel experiences.
+
+With years of hands-on experience across our respective fields, we bring together precision, technology, strategic planning, and a strong customer-first mindset to redefine the way travel services are delivered. This unique blend enables us to understand our customers better, plan intelligently, and curate journeys that are safe, comfortable, and truly memorable.
+
+At travelX Holidays, we believe travel is not just about reaching a destination—it’s about the experience, trust, and care that accompany every mile of the journey. From airport transfers and leisure travel to corporate movements and customized tour packages, we emphasize reliability, transparency, and personalized service at every step.
+
+Our mission is to make every trip seamless and stress-free, supported by professional ethics, modern solutions, and genuine hospitality. As friends turned founders, we value long-term relationships and are committed to being a trusted travel partner you can rely on—wherever the road takes you.
+
+Our office is located near Cochin International Airport, enabling us to provide quick, efficient, and reliable travel support for airport and city journeys.
+
+Travel smart. Travel comfortable. Travel with travelX Holidays.</p>
+        </div>
+    </section>
+
+    <!-- Meet Our Leadership -->
+    <!-- <section class="py-5" style="background-color:#faf3e0;" data-aos="fade-up">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Meet Our Leadership</h2>
+            <div class="row gy-4">
+                <div class="col-sm-6 col-md-3" data-aos="flip-left" data-aos-delay="100">
+                    <img src="assets/team1.jpg" alt="Leader 1" class="team-img mb-3">
+                    <h6 class="fw-bold">Rohit Sharma</h6>
+                    <p class="text-muted">Founder & CEO</p>
+                </div>
+                <div class="col-sm-6 col-md-3" data-aos="flip-left" data-aos-delay="200">
+                    <img src="assets/team2.jpg" alt="Leader 2" class="team-img mb-3">
+                    <h6 class="fw-bold">Neha Patel</h6>
+                    <p class="text-muted">Head of Experiences</p>
+                </div>
+                <div class="col-sm-6 col-md-3" data-aos="flip-left" data-aos-delay="300">
+                    <img src="assets/team3.jpg" alt="Leader 3" class="team-img mb-3">
+                    <h6 class="fw-bold">Vikram Mehta</h6>
+                    <p class="text-muted">Creative Director</p>
+                </div>
+                <div class="col-sm-6 col-md-3" data-aos="flip-left" data-aos-delay="400">
+                    <img src="assets/team4.jpg" alt="Leader 4" class="team-img mb-3">
+                    <h6 class="fw-bold">Ananya Iyer</h6>
+                    <p class="text-muted">Operations Head</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/9895534949" class="whatsapp-float" target="_blank" id="whatsappToggle">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <footer class="text-light pt-5" style="background-color: #16b19f;">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- About -->
+                <div class="col-md-4 pt-4">
+                    <!-- <h4 class="fw-bold mb-3 text-warning">TravelX</h4>
+                    <p style="line-height: 1.8;">
+                        Explore the world with confidence. From exotic beaches to mountain adventures,
+                        TravelX helps you plan your perfect journey.
+                    </p> -->
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./assets/TXlogo.png" alt="Logo" width="170" height="70" class="me-2" />
+        </a>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://www.facebook.com/share/17kPGGdbDP/" class="text-light fs-5"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/travelx_holidays_cochin?utm_source=qr&igsh=MTl0NG12NHpoczlnaw==" class="text-light fs-5"><i class="fab fa-instagram"></i></a>
+    
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2">
+                    <h5 class="fw-semibold text-warning mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none d-block mb-2">Home</a></li>
+                        <li><a href="#" class="text-light text-decoration-none d-block mb-2">About</a></li>
+                        <li><a href="#" class="text-light text-decoration-none d-block mb-2">Services</a></li>
+                        <li><a href="#" class="text-light text-decoration-none d-block mb-2">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3">
+                    <h5 class="fw-semibold text-warning mb-3">Contact Us</h5>
+                    <p><i class="fa-solid fa-location-dot me-2 text-warning"></i> travelX Holidays,5E, C.P Urumese Arcade, Cochin Airport Road, Nayathode (P.O), Kavaraparambu, Angamaly, Kochi, Kerala-India -683572</p>
+                    <p><i class="fa-solid fa-phone me-2 text-warning"></i> +91 95625 65676</p>
+                    <p><i class="fa-solid fa-envelope me-2 text-warning"></i> info@travelxcochin.com</p>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-3">
+                    <h5 class="fw-semibold text-warning mb-3">Subscribe</h5>
+                    <p>Join our newsletter for travel deals and updates!</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control rounded-start" placeholder="Your Email">
+                        <button class="btn btn-warning rounded-end"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center border-top border-light mt-5 pt-3 pb-2">
+                <p class="mb-0 small">
+                    © 2025 <strong>travelX</strong>. All Rights Reserved. | Designed by BowerBirds Media Solutions
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out'
+        });
+    </script>
+
+</body>
+
+</html>

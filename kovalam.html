@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>travelX</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/TXlogo.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: "Playfair", serif;
+      background-color: #f8e7d2;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #16b19f !important;
+    }
+    .navbar .nav-link {
+      color: #ffffff !important;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .navbar .nav-link:hover {
+      color: #f6c90e !important;
+    }
+    .navbar .nav-link.active {
+      color: #3a3a8d !important;
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 6px 12px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      height: 90vh;
+      background: url("./assets/hero.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fdfdfd;
+    }
+
+    .hero-content span {
+      color: #f6c90e;
+    }
+
+    .hero-content p {
+      font-size: 1.3rem;
+      margin-top: 15px;
+      color: #f8e7d2;
+    }
+
+    .hero-btn {
+      margin-top: 30px;
+      background-color: #3a3a8d;
+      color: white;
+      font-weight: 600;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .hero-btn:hover {
+      background-color: #fff;
+      color: #3a3a8d;
+    }
+
+
+    /* Section Headings */
+    .section-heading {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .section-heading h2 {
+      color: #f76c5e;
+      font-weight: 600;
+    }
+
+    .section-heading h1 {
+      color: #2e2e2e;
+      font-weight: 700;
+    }
+
+    /* Destination Cards */
+    .destination-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .destination-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(70%);
+      transition: transform 0.4s ease;
+    }
+
+    .destination-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .destination-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .card-overlay h3 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .card-overlay p {
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    /* Card sizes */
+    .card-small {
+      height: 250px;
+    }
+
+    .card-large {
+      height: 400px;
+    }
+
+    .card-tall {
+      height: 350px;
+    }
+
+    /* Custom wide card (Valparai, Kashmir) */
+    .card-wide {
+      height: 420px;
+    }
+
+    /* Add gap around Meghalaya, Valparai, Kashmir */
+    .card-gap {
+      margin-top: 30px;
+    }
+
+    /* Responsive fix */
+    @media (max-width: 768px) {
+
+      .card-small,
+      .card-large,
+      .card-tall,
+      .card-wide {
+        height: 300px;
+      }
+
+      .card-gap {
+        margin-top: 20px;
+      }
+    }
+
+    .why-choose-us {
+      background: linear-gradient(to right, #fff8e1 50%, #ffffff 50%);
+    }
+
+    /* Heading style */
+    .section-title {
+      font-size: 2.5rem;
+      color: #2e2e2e;
+    }
+     .travel-desc {
+  font-size: 1.15rem;   /* Increase text size */
+  line-height: 1.9;     /* Comfortable reading */
+  color: #444;
+}
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  background-color: #16b19f;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #f76c5e;
+  color: #fff;
+  transform: translateX(-4px);
+}
+
+    /* Animated plane hover effect */
+    /* .animated-plane {
+  max-width: 80%;
+  transition: transform 0.8s ease-in-out;
+} */
+
+    /* .animated-plane:hover {
+  transform: translateY(-10px) scale(1.05);
+} */
+ /* Footer */
+        footer {
+            background-color: #7fb5d4;
+            color: white;
+            padding: 40px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./assets/TXlogo.png" alt="Logo" width="120" height="50" class="me-2" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+          <!-- <li class="nav-item"><a class="nav-link " href="service.html">Services</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="package.html">Packages</a></li>
+          <li class="nav-item"><a class="nav-link " href="contact.html">Our Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- taxi servises -->
+<section class="py-5" style="background-color:#fff8e1;">
+  <div class="container">
+
+    <div class="section-heading mb-5 text-center">
+      <h2>Kovalam Sightseeing</h2>
+      <p>Relax by the sea and enjoy coastal beauty with <strong>TravelX</strong></p>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="./assets/kovalam beach1.jpg" class="img-fluid rounded shadow" alt="Kovalam Beach">
+      </div>
+
+      <div class="col-md-6">
+        <h1>Kovalam Beach</h1>
+        <p class="travel-desc">
+          Famous for its crescent-shaped shoreline and swaying palm trees, Kovalam is one of Kerala’s most loved beach
+          destinations. The golden sands, calm blue waters, and gentle sea breeze create a relaxing atmosphere ideal for
+          unwinding. Visitors can enjoy swimming, sunbathing, and peaceful walks along the shore while soaking in stunning
+          sunset views over the Arabian Sea.
+        </p>
+        <p class="travel-desc">
+          Beyond the beach, Kovalam offers a blend of wellness and culture, with traditional Ayurveda centers, seaside
+          cafes, and local markets adding charm to the experience. Whether you’re seeking relaxation, romance, or a calm
+          coastal escape, Kovalam promises a refreshing and memorable seaside journey.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="container mt-4 text-center">
+  <a href="package.html" class="back-link">
+    <i class="bi bi-arrow-left"></i> Back
+  </a>
+</div>
+
+
+
+  <!-- ================= FOOTER SECTION ================= -->
+  <footer class="text-light pt-5" style="background-color: #16b19f;">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- About -->
+        <div class="col-md-4 pt-4">
+          <!-- <h4 class="fw-bold mb-3 text-warning">TravelX</h4>
+          <p style="line-height: 1.8;">
+            Explore the world with confidence. From exotic beaches to mountain adventures,
+            TravelX helps you plan your perfect journey.
+          </p> -->
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./assets/TXlogo.png" alt="Logo" width="170" height="70" class="me-2" />
+        </a>
+          <div class="d-flex gap-3 mt-3">
+            <a href="https://www.facebook.com/share/17kPGGdbDP/" class="text-light fs-5"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/travelx_holidays_cochin?utm_source=qr&igsh=MTl0NG12NHpoczlnaw==" class="text-light fs-5"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2">
+          <h5 class="fw-semibold text-warning mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none d-block mb-2">Home</a></li>
+            <li><a href="#" class="text-light text-decoration-none d-block mb-2">About</a></li>
+            <li><a href="#" class="text-light text-decoration-none d-block mb-2">Services</a></li>
+            <li><a href="#" class="text-light text-decoration-none d-block mb-2">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-3">
+                    <h5 class="fw-semibold text-warning mb-3">Contact Us</h5>
+                    <p><i class="fa-solid fa-location-dot me-2 text-warning"></i>  travelX Holidays,5E, C.P Urumese Arcade, Cochin Airport Road, Nayathode (P.O), Kavaraparambu, Angamaly, Kochi, Kerala-India -683572</p>
+                    <p><i class="fa-solid fa-phone me-2 text-warning"></i> +91  95625 65676</p>
+                    <p><i class="fa-solid fa-envelope me-2 text-warning"></i> info@travelxcochin.com</p>
+                </div>
+
+        <!-- Newsletter -->
+        <div class="col-md-3">
+          <h5 class="fw-semibold text-warning mb-3">Subscribe</h5>
+          <p>Join our newsletter for travel deals and updates!</p>
+          <form class="d-flex">
+            <input type="email" class="form-control rounded-start" placeholder="Your Email">
+            <button class="btn btn-warning rounded-end"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center border-top border-light mt-5 pt-3 pb-2">
+        <p class="mb-0 small">
+          © 2025 <strong>travelX</strong>. All Rights Reserved. | Designed by BowerBirds Media Solutions
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animation duration
+      once: true,     // animate only once
+    });
+  </script>
+
+</body>
+
+</html>

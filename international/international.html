@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en"class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International</title>
+    <!-- favicon -->
+  <link rel="shortcut icon" href="./media/favicon.jpg" type="image/x-icon">
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Comic+Relief:wght@400;700&family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- font awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <!-- style -->
+  <style>
+    * {
+      font-family: "Playfair", serif;
+    }
+
+    #links {
+      color: #ffffff;
+    }
+
+    #links:hover {
+      color: #c9efff;
+    }
+  </style>
+</head>
+<body id="SoulRoutes" style="background-color:#faf3e0;">
+    <!-- navbar -->
+  <nav class="bg-[#7fb5d4] sticky top-0 z-50 w-full shadow-md">
+    <div class=" flex h-16 items-center justify-between">
+      <!-- logo -->
+      <div class="pl-2 ml-2">
+        <!-- <img src="./media/logo1.jpg" alt="logo"class="w-24 h-20"> -->
+        <h1 class="text-xl font-bold ml-0" style="font-family: 'Dancing Script', cursive; color: #ffffff;">
+          Soul Routes</h1>
+      </div>
+      <!-- desktop -->
+      <div class="hidden sm:ml-6 sm:block">
+        <div class="flex space-x-4 items-center">
+           <a href="./index.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block" id="links">Home</a>
+          <a href="./about.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block" id="links">About</a>
+          <a href="./national.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block" id="links">National</a>
+          <a href="./international.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block"id="links">International</a>
+          <a href="./service.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block" id="links">Services</a>
+          <a href="./login.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block" id="links">Login</a>
+          <a href="./booking.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block" id="links">Contact</a>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden " id="mobile-menu">
+      <div class="space-y-1 px-2 pt-2 pb-3 ">
+        <a href="./index.html" class="block rounded-md px-3 py-2 text-sm font-medium " id="links">Home</a>
+        <a href="./about.html" class="block rounded-md px-3 py-2 text-sm font-medium" id="links">ABout</a>
+           <a href="./national.html" class="block rounded-md px-3 py-2 text-sm font-medium" id="links">National</a>
+          <a href="./international.html" class="block rounded-md px-3 py-2 text-sm font-medium"id="links">International</a>
+        <a href="./service.html" class="block rounded-md px-3 py-2 text-sm font-medium" id="links">Services</a>
+        <a href="./login.html" class="block rounded-md px-3 py-2 text-sm font-medium" id="links">Login</a>
+        <a href="./booking.html" class="block rounded-md px-3 py-2 text-sm font-medium" id="links">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!--  -->
+    <div
+    class="w-full min-h-[50vh] sm:min-h-[50vh] md:min-h-screen bg-[url('https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2024/01/24194935/queensland.jpg')] bg-cover bg-center bg-no-repeat">
+    <div class="w-full md:min-h-screen min-h-[60vh] sm:min-h-[70vh]" style="background-color: rgba(0, 0, 0, 0.555);">
+     
+      <div class="text-white w-full flex justify-center items-center flex-col pt-20">
+        <h1 class="md:text-9xl pt-5">INTERNATIONAL</h1>
+        <div class="md:grid grid-cols-3 gap-30 py-10">
+          <button class=""><a href="#family">FAMILY</a></button>
+          <button><a href="#solo">SOLO</a></button>
+          <button><a href="#honeymoon">COUPLES</a></button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="flex justify-center items-center flex-col" id="family" style="background-color:#faf3e0;">
+    <h1 class="text-center mt-10 md:text-4xl font-bold" style="font-family: 'Playfair', serif;color: #2e2e2e;">FAMILY
+      DESTINATIONS</h1>
+    <!-- family -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 sm:px-12 lg:px-40 mt-10">
+
+      <!-- destination1 -->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img
+          src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXVzdHJhbGlhfGVufDB8fDB8fHww"
+          alt="destination1" class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color: #707070;">Australia</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          15 Days <br>
+          Meet and Greet service at Airport <br>To and Fro Economy flight ticket <br>Accommondation,Meals and
+          Transportation/Car Availbale
+
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="./booking.html">Book Now</a>
+        </div>
+      </div>
+      <!-- destination2-->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img src="https://trawel.blob.core.windows.net/trawel/content_files/General/53a2c70f-f93.png" alt="destination1"
+          class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color:  #707070;">France</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          16 days <br> Popular destinations include Paris, the French Riviera, and historical sites like the Palace of
+          Versailles <br>o and Fro Economy flight ticket
+
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="./booking.html">Book Now</a>
+        </div>
+      </div>
+      <!-- destination3-->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img src="https://static.toiimg.com/photo/msid-102933784,width-96,height-65.cms" alt="destination1"
+          class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color:  #707070;">Tremendous TURKEY </h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          Cochin - Istanbul -Cochin economy class airfare (International) <br>
+          07 Nights 4* /5* hotel accommodation as per itinerary
+          Breakfast, Lunch and Dinner as per itinerary
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="./booking.html">Book Now</a>
+        </div>
+      </div>
+      <!-- destination4-->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img src="https://static.toiimg.com/thumb/msid-107700466,width-748,height-499,resizemode=4,imgsize-119838/.jpg"
+          alt="destination1" class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center text-2xl mb-1" style="color:  #707070;">Singapore</h3>
+
+        <p class="text-center md:text-sm mt-2" style="color: #5e5e5e;">
+          6-7 Days <br>Gardens by the Bay, Sentosa Island, <br>Universal Studios Singapore, and Marina Bay Sands.Lion City 🦁
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="./booking.html">Book Now</a>
+        </div>
+      </div>
+      <!-- destination5-->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img src="https://static.toiimg.com/img/110640892/Master.jpg" alt="destination1"
+          class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color:  #707070;">Delightful VIETNAM</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          7-8 Days <br>Visit Killing field- Choeung Ek
+          Guided Phnom Penh City Tour, Angkor Wat Temple <br>Guided Siem Reap City Tour
+
+
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="./booking.html">Book Now</a>
+        </div>
+      </div>
+      <!-- Destination 6 -->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img
+          src="https://www.travelandleisure.com/thmb/nDDNqO2EctQhiIfZrxeXTF47zhE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-koh-phi-phi-PLACESTHAILAND1023-09b9d347b3cd4844b4ae19e4e06a9a6d.jpg"
+          alt="destination1" class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center text-2xl mb-1" style="color:  #707070;">Tempting THAILAND</h3>
+
+        <p class="text-center md:text-sm mt-2" style="color: #5e5e5e;">
+          5-6 Days <br>AIRLINE-Return economy class airfare <br>HOTELS-All hotels will be of premium 5 Stars standards
+          or similar.
+
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="./booking.html">Book Now</a>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+  <!-- solo -->
+  <div class="flex justify-center items-center flex-col" id="solo" style="background-color:#faf3e0;">
+    <h1 class="text-center mt-10 md:text-4xl font-bold" style="font-family: 'Playfair', serif;color: #2e2e2e;">SOLO
+      PACKAGES</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 sm:px-12 lg:px-40 mt-10">
+
+      <!-- destination1 -->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img
+          src="https://media.cntravellerme.com/photos/650af944349d8c31fad3d512/16:9/w_1280,c_limit/LONDON%20GettyImages-1286286521.jpg"
+          alt="destination1" class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color: #707070;">London</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          12 Days <br> Buckingham Palace summer tour, Travel back in time with a visit to Buckingham Palace, <br>Warner
+          Bros, Studio Tour London, <br>Tower of London, <br> Hop-on hop-off bus tour</p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="">Book Now</a>
+        </div>
+      </div>
+      <!-- destination2-->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img
+          src="https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FCountry%2Fswitzerland-best-time-to-visit.jpg&w=1080&q=75"
+          alt="destination1" class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color:  #707070;">Switzerland</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          7-8 Days Zurich, Geneva, Lucerne, Interlaken, Zermatt, <br>Lausanne, Bern, Montreux, Grindelwald, and St.
+          Moritz <br>providing Accommondation, Meals, Transportation/Car. A land of majestic Alps and timeless beauty, where nature and precision thrive together.
+ it’s a paradise for travelers and peace seekers alike.
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="">Book Now</a>
+        </div>
+      </div>
+      <!-- destination3-->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img
+          src="https://media.istockphoto.com/id/510967662/photo/santorini-sunset-at-dawn-village-of-oia-greece.jpg?s=612x612&w=0&k=20&c=O05ZFOTQmVs7m34iL7-WTlPIW7XcWH55V9WCm03i1JI="
+          alt="destination1" class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color:  #707070;">Greece</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          5-6 Days <br> Athens, Santorini, Mykonos, Crete, <br> Rhodes, and Meteora <br> providing Accommondation
+          <br>Meals <br> Transportation/Car
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="">Book Now</a>
+        </div>
+      </div>
+      <!-- destination4-->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img
+          src="https://www.planetware.com/wpimages/2019/08/thailand-in-pictures-most-beautiful-places-bangkok-riverfront.jpg"
+          alt="destination1" class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color:  #707070;">Tempting Thailand</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          4-5 days <br>
+          Return economy class airfare <br>All hotels will be of premium 5 Stars standards or similar. <br>Continental
+          buffet breakfast at hotels. Lunch & Dinner will be provided in hotels, <br>TTemples, Beaches, Cuisine, Culture, Smiles.
+
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="">Book Now</a>
+        </div>
+      </div>
+      <!-- destination5-->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img src="https://www.hindustantimes.com/ht-img/img/2025/03/25/1600x900/vietnam_1742885224191_1742885224438.jpg"
+          alt="destination1" class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color:  #707070;">Vietnam</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">Hanoi and Ho Chi Minh City, <br>the stunning natural
+          beauty of Ha Long Bay and the Mekong Delta, <br> historical sites of Hoi An and Hue <br> Lunch & Dinner will
+          be provided in hotels, <br>local and Indian restaurants
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="">Book Now</a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+  <!-- Honeymoon -->
+  <div class="flex justify-center items-center flex-col" id="honeymoon" style="background-color:#faf3e0;">
+    <h1 class="text-center mt-10 md:text-4xl font-bold" style="font-family: 'Playfair', serif;color: #2e2e2e;">HOMEYMOON
+      PACKAGES</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 sm:px-12 lg:px-40 mt-10">
+
+      <!-- destination1 -->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnoj8QqhDJTocwWhjCxGl1tferGaHGRlLymg&s"
+          alt="destination1" class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color: #707070;">Australia</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          8-9 Days <br>To and fro Economy Class Flight Ticket <br>Meet and greet service at Airports <br>Transfers in AC
+          vehicles <br>All Entry Tickets as per itinerary
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="./booking.html">Book Now</a>
+        </div>
+      </div>
+      <!-- destination2-->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img src="https://www.theknot.com/tk-media/images/0108e30b-f23f-4d5b-bacb-c13df8215c94" alt="destination1"
+          class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color:  #707070;">Blissful Bali</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          5-6 Days <br>Return economy class airfare. Indonesia single-entry visa cost included. <br>All hotels will be
+          of premium 4 Stars standards or similar. <br>Romantic, Exotic, Sunset, Serenity, Bliss.
+
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="./booking.html">Book Now</a>
+        </div>
+      </div>
+      <!-- destination3-->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img src="https://media1.thrillophilia.com/filestore/zgmqk48e6yn18lurfuaqu1m2qvb5_london%202-min.jpg"
+          alt="destination1" class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color:  #707070;">London</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          12 Days <br> Buckingham Palace summer tour, Travel back in time with a visit to Buckingham Palace, <br>Warner
+          Bros, Studio Tour London, Tower of London, Hop-on hop-off bus tour</p>
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="./booking.html">Book Now</a>
+        </div>
+      </div>
+      <!-- destination4-->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img
+          src="https://www.honeymoonbug.com/blog/wp-content/uploads/2018/07/Explore-The-Romantic-Places-In-Mauritius.jpg"
+          alt="destination1" class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color:  #707070;">Mauritius</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          7-8 Days <br>Le Morne Brabant, La Vanille Crocodile Park, Ganga Talao <br>Eureka Falls, Fort Adelaide, Le
+          Pouce Mountain, <br> To and Fro Economy flight ticket
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="./booking.html">Explore Now</a>
+        </div>
+      </div>
+      <!-- destination5-->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img src="https://images.wanderon.in/blogs/new/2024/06/things-to-do-in-france-on-honeymoon.jpg"
+          alt="destination1" class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color:  #707070;">France</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          12 days <br> Popular destinations include Paris, the French Riviera, and historical sites like the Palace of
+          Versailles <br>To and Fro Economy flight ticket
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="./booking.html">Book Now</a>
+        </div>
+      </div>
+      <!-- destination6-->
+      <div class="transition duration-300 transform hover:scale-105 hover:shadow-xl rounded-lg bg-white/90 p-4"
+        style="background-color:#ffffff;">
+        <img
+          src="https://thehoneymoonedit.com/wp-content/uploads/2022/12/Cappadocia-Central-AnatoliaTurkey-shutterstock_2048861867.jpg.webp"
+          alt="destination1" class="w-full h-52 object-cover rounded-md mb-3" />
+
+        <h3 class="text-center md:text-2xl mb-1" style="color:  #707070;">Tremendous TURKEY</h3>
+
+        <p class="text-center text-sm mt-2" style="color: #5e5e5e;">
+          Cochin - Istanbul -Cochin economy class airfare (International) <br>
+          07 Nights 4* /5* hotel accommodation as per itinerary
+          Breakfast, Lunch and Dinner as per itinerary
+        </p>
+
+        <div class="text-center mt-3">
+          <a class="book-btn px-6 py-2 bg-[#f76c5e] rounded text-white" href="./booking.html">Book Now</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- banner -->
+  <div
+    class=" bg-[url(https://www.holidaymonk.com/wp-content/uploads/2024/07/Goa-Tour-Package-1-1024x640.webp)]  bg-gradient-to-r from-blue-400 to-indigo-400 text-white p-6 md:p-20 rounded-2xl shadow-xl max-w-4xl mx-auto my-10">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+      <!-- Left Content -->
+      <div>
+        <h2 class="text-3xl text-black md:text-4xl font-bold">🔥 Summer Travel Offer!</h2>
+        <p class="mt-2 text-lg text-black md:text-xl">Book your holiday package now & get <span
+            class="font-semibold text-[#f76c5e]">30% OFF</span></p>
+        <p class="text-sm text-black-200 mt-1">Limited time offer · T&Cs apply</p>
+      </div>
+
+      <!-- Right Button -->
+      <div>
+        <a href="./booking.html"
+          class="inline-block book-btn px-6 py-2 bg-[#f76c5e] rounded text-white font-bold text-lg rounded-full hover:bg-yellow-300 transition-all duration-300">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </div>
+ <!-- footer -->
+ <footer class="bg-[#5da1c9] ">
+    <div class=" py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2 class="text-center text-lg/8 font-semibold text-gray-900">Proudly Partnered with the Pioneers of Travel</h2>
+        <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 place-items-center">
+          <img class="max-h-24 w-full object-contain" src="./media/taj-removebg-preview.png" alt="Transistor" />
+          <img class="max-h-24 w-full object-contain" src="./media/makemytrrip-removebg-preview.png" alt="Reform" />
+          <img class="max-h-24 w-full object-contain" src="./media/emirates-removebg-preview.png" alt="Tuple" />
+          <img class="max-h-24 w-full object-contain" src="./media/clubmahindra.png" alt="SavvyCal"  />
+          <img class="max-h-24 w-full object-contain" src="./media/thomascook.png" alt="Statamic" />
+        </div>
+      </div>
+    </div>
+    <!-- section2 -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 lg:px-20 py-10 text-center">
+      <div>
+        <h1 class="text-center text-3xl font-bold mb-2" style="font-family: 'Dancing Script', cursive;">Soul Routes</h1>
+        <h2 class="text-lg font-semibold">Head Office - Kochi</h2>
+        <p class="text-sm">2nd Floor,Bayview Complex, Marine Drive </p>
+        <p class="text-sm">Shanmugam Road,Kochi Kerala-682031</p>
+        <p class="text-sm">+91 4578912597</p>
+        <p class="text-sm"><a href="mailto:info@soulroutes.com" class="contact-mail">info@soulroutes.com</a></p>
+        <div class="flex justify-center space-x-6 text-3xl ">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <h1 class="text-center mt-10 text-3xl"> About Soul Routes</h1>
+        <p>Soul Routes curates unforgettable journeys across the globe. Whether it's a honeymoon in the Maldives, solo
+          travel in Europe, or hidden treasures in India — we make every trip soulful and seamless.</p>
+
+      </div>
+
+      <div class="text-center">
+        <div class="flex flex-col items-center space-y-2 text-xl ">
+          <h1 class="text-center text-3xl font-bold" style="font-family: 'Dancing Script', cursive;">Soul Routes</h1>
+          <a href="./index.html" class="hover:text-white transition-colors">Home</a>
+          <a href="./about.html" class="hover:text-white transition-colors">About Us</a>
+          <a href="./national.html" class="hover:text-white transition-colors">National</a>
+          <a href="./international.html" class="hover:text-white transition-colors">International</a>
+          <a href="./service.html" class="hover:text-white transition-colors">Services</a>
+          <a href="./login.html" class="hover:text-white transition-colors">Login</a>
+          <a href="./booking.html" class="hover:text-white transition-colors">Contact</a>
+        </div>
+
+      </div>
+
+      <section class="px-4  ">
+        <h2 class="text-3xl md:text-4xl font-bold text-center  text-[#2e2e2e]" style="font-family: 'Playfair', serif;">
+          <u> Our Branches</u>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+
+
+          <div class="flex flex-col items-center">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2"><u>Noida</u></h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.877752532691!2d76.31775010000001!3d9.944128200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0873d997c4c9b5%3A0x1adc8f73e23c6aa8!2sForum%20Kochi!5e0!3m2!1sen!2sin!4v1749921335448!5m2!1sen!2sin"
+              width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="mt-2 text-center text-sm font-medium ">5th Floor, Horizon Towers, Sector 6</p>
+            <p>Noida, UP– 201301 </p>
+
+            <p>+91 98765 43210</p>
+            <p><a href="mailto:north@soulroutes.com" class="contact-mail">north@soulroutes.com</a></p>
+          </div>
+
+          <div class="flex flex-col items-center text-justify">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2"><u>Trivandrum</u></h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8748218670153!2d76.3084032!3d10.0271873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080dafbed183bf%3A0x5951f316ba13a37e!2sLuLu%20International%20Shopping%20Mall!5e0!3m2!1sen!2sin!4v1749921379496!5m2!1sen!2sin"
+              width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="mt-2 text-center text-sm font-medium ">3rd Floor, Skyline Business Bay</p>
+            <p>Technopark Campus Road, </p>
+            <p> Tvm 695582</p>
+
+            <p>+91 98957 24680</p>
+            <p><a href="mailto: trivandrum@soulroutes.com" class="contact-mail"> trivandrum@soulroutes.com</a></p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <div class="flex justify-center items-center p-3">
+      <h6 class="text-center text-sm md:text-base">©2025 Soul Routes. All rights reserved. Crafted with ✈️ and ❤️ for
+        travel
+        lovers. </h6>
+    </div>
+      <div id="arrowUp" class="fixed bottom-6 right-6 z-50">
+  <a href="#SoulRoutes" 
+     class="bg-blue-600 hover:bg-blue-800 text-white p-4 rounded-full shadow-lg transition-all duration-300">
+    <i class="fa-solid fa-arrow-up text-xl"></i>
+  </a>
+</div>
+
+  </footer>
+    
+</body>
+</html>

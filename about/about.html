@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./media/favicon.jpg" type="image/x-icon">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Comic+Relief:wght@400;700&family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- style -->
+    <style>
+        * {
+            font-family: "Playfair", serif;
+        }
+
+        #links {
+            color: #ffffff;
+        }
+
+        #links:hover {
+            color: #c9efff;
+        }
+    </style>
+</head>
+
+<body id="about" style="background-color:#faf3e0;">
+ 
+    <!-- navbar -->
+    <nav class="bg-[#7fb5d4] sticky top-0 z-50 w-full shadow-md">
+        <div class=" flex h-16 items-center justify-between">
+            <!-- logo -->
+            <div class="pl-2 ml-2">
+                <!-- <img src="./media/logo1.jpg" alt="logo"class="w-24 h-20"> -->
+                <h1 class="text-xl font-bold ml-0" style="font-family: 'Dancing Script', cursive; color: #ffffff;">
+                    Soul Routes</h1>
+            </div>
+            <!-- desktop -->
+            <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4 items-center">
+                    <a href="./index.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block" id="links">Home</a>
+          <a href="./about.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block" id="links">About</a>
+          <a href="./national.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block" id="links">National</a>
+          <a href="./international.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block"id="links">International</a>
+          <a href="./service.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block" id="links">Services</a>
+          <a href="./login.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block" id="links">Login</a>
+          <a href="./booking.html" class="rounded-md px-4 py-2 text-xl font-medium inline-block" id="links">Contact</a>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden " id="mobile-menu">
+            <div class="space-y-1 px-2 pt-2 pb-3 ">
+               <a href="./index.html" class="block rounded-md px-3 py-2 text-sm font-medium " id="links">Home</a>
+        <a href="./about.html" class="block rounded-md px-3 py-2 text-sm font-medium" id="links">ABout</a>
+           <a href="./national.html" class="block rounded-md px-3 py-2 text-sm font-medium" id="links">National</a>
+          <a href="./international.html" class="block rounded-md px-3 py-2 text-sm font-medium"id="links">International</a>
+        <a href="./service.html" class="block rounded-md px-3 py-2 text-sm font-medium" id="links">Services</a>
+        <a href="./login.html" class="block rounded-md px-3 py-2 text-sm font-medium" id="links">Login</a>
+        <a href="./booking.html" class="block rounded-md px-3 py-2 text-sm font-medium" id="links">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- hero section -->
+    <section class="relative bg-cover bg-center h-screen "
+        style="background-image: url('./media/about2.jpg');">
+        <!-- <img src="./media/about2.jpg" alt="" class="absolute top-0 left-0 w-full h-full object-cover z-0"> -->
+
+        <div class="absolute inset-0 z-10"></div>
+        <div class="relative z-20 flex items-center justify-center h-full text-center text-white px-4">
+            <div>
+                <h1 class="text-6xl md-text-6xl font-bold mb-6">From Passion to Passport-Our Story Begins with You </h1>
+                <p class="text-lg md-text-4xl font-bold mb-6">Discover the people, purpose, and passion behind your
+                    unforgettable adventures.</p>
+                <a href="#ourstory"
+                    class="mb-2 inline-block bg-white text-black font-semibold px-6 py-2 rounded-full hover:bg-[#f76c5e] hover:text-white transition">Explore
+                    Our Story</a>
+                <a href="./international.html"
+                    class=" inline-block border border-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition">Discover
+                    Destinations</a>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- content -->
+       <section id="ourstory">
+          <div class="px-6 py-10 bg-[#FAF3E0] text-gray-800">
+              <div class="max-w-5xl mx-auto">
+                  <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center ">Crafting Journeys That Speak to the Soul
+                  </h2>
+                  <p text-lg mb-8 text-center>At <strong>Soul Routes</strong>, we believe that travel isn't just about
+                      destinations – it's about the moments that move you, the connections that change you, and the
+                      memories that linger long after the trip ends.</p>
+                  <p class="text-lg mb-8">Born from a passion for exploration and deep storytelling, we specialize in
+                      <strong>romantic getaways, bespoke honeymoons, soulful solo escapes, family adventures, and
+                          cross-border cultural experiences</strong>. Whether it's your first international trip or your
+                      dream wedding on a mountaintop, we’re here to make it magical.</p>
+  
+              </div>
+          </div>
+          <!-- next part -->
+          <div class="px-6 py-20 bg-white text-gray-800">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">
+        From Local Wonders to Global Love Stories
+      </h2>
+  
+      <div class="grid md:grid-cols-2 gap-10">
+        <!--  List -->
+        <div>
+          <ul class="list-disc pl-5 space-y-3 text-lg">
+            <li>
+              <strong>Honeymoon & Romantic Escapes</strong> – Candlelight dinners in Santorini, snowfall cuddles in Kashmir, beach sunsets in Bali.
+            </li>
+            <li>
+              <strong>International Travel</strong> – From European elegance to African safaris, tailor-made for your style.
+            </li>
+            <li>
+              <strong>National Adventures</strong> – Rediscover India’s charm, from Ladakh’s serenity to Kerala’s backwaters.
+            </li>
+            <li>
+              <strong>Family & Group Tours</strong> – Safe, enriching, memory-filled trips for all generations.
+            </li>
+          </ul>
+        </div>
+  
+        <!--  Image -->
+        <div>
+          <img src="./media/about4.jpg" alt="Travel Moments" class="rounded-xl shadow-lg w-full h-auto" />
+        </div>
+      </div>
+    </div>
+  </div>
+  
+          </div>
+          <!-- next section -->
+           
+      <div class="px-6 py-20 bg-[#fef7f2] text-gray-800">
+          <div class="max-w-5xl mx-auto text-center">
+              <h2 class="text-3xl font-bold mb-6">Why Soul Routes?</h2>
+              <div class="grid md:grid-cols-3 gap-8 text-left">
+                  <div>
+                      <h3 class="font-semibold mb-2">✅ Tailor-Made Itineraries</h3>
+                      <p>Curated with your interests, pace, and preferences in mind.</p>
+                  </div>
+                  <div>
+                      <h3 class="font-semibold mb-2">💑 Romantic Touches</h3>
+                      <p>We add the sparkle – surprise gestures, secret spots, sunset dinners.</p>
+                  </div>
+                  <div>
+                      <h3 class="font-semibold mb-2">🌿 Sustainable & Ethical</h3>
+                      <p>We respect nature, cultures, and communities we travel through.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--  -->
+        <div class="px-6 py-20 bg-white text-gray-800">
+          <div class="max-w-4xl mx-auto text-center">
+              <h2 class="text-3xl font-bold mb-6">Our Journey</h2>
+              <p class="text-lg">What began as a travel diary between two friends in 2018 has blossomed into a boutique
+                  agency that’s helped <strong>3,000+ travelers</strong> create lasting memories. From proposals under the
+                  Northern Lights to exploring Jaipur's royal charm – we’re honored to be part of your story.</p>
+          </div>
+      </div>
+      <!-- team -->
+      <div class="bg-white py-24 sm:py-32" style="background-color:#faf3e0;">
+    <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
+      <div class="max-w-xl">
+        <h2 class="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">Meet our leadership</h2>
+        <p class="mt-6 text-lg/8 text-gray-600">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
+      </div>
+      <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="w-28 h-28 object-cover rounded-full shadow-md" src="./media/durga.jpg" alt="" />
+            <div>
+              <h3 class="text-lg font-bold tracking-tight text-gray-900">Durga</h3>
+              <p class="text-base font-semibold text-indigo-600">Partner</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="w-28 h-28 object-cover rounded-full shadow-md" src="./media/amal.jpg" alt="" />
+            <div>
+              <h3 class="text-lg font-bold tracking-tight text-gray-900">Amal Das</h3>
+              <p class="text-base font-semibold text-indigo-600">Partner</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="w-28 h-28 object-cover rounded-full shadow-md" src="./media/Allu.jpg" alt="" />
+            <div>
+              <h3 class="text-lg font-bold tracking-tight text-gray-900">Allu</h3>
+              <p class="text-base font-semibold text-indigo-600">Partner</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="w-28 h-28 object-cover rounded-full shadow-md" src="./media/abhishek.jpg" alt="" />
+            <div>
+              <h3 class="text-lg font-bold tracking-tight text-gray-900">Abhishek</h3>
+              <p class="text-base font-semibold text-indigo-600">Partner</p>
+            </div>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
+  
+      <!--  -->
+      <div class="px-6 py-20 bg-[#fef0e3] text-center">
+          <h2 class="text-3xl font-bold mb-6" style="color: #2e2e2e;">Ready to Write Your Travel Story?</h2>
+          <div class="flex justify-center gap-6">
+              <a href="./booking.html" class="bg-[#f76c5e] text-white px-6 py-3 rounded-full hover:bg-[#d85745] transition">Plan
+                  My Trip</a>
+              <a href="./service.html"
+                  class="border border-[#f76c5e] text-[#f76c5e] px-6 py-3 rounded-full hover:bg-[#f76c5e] hover:text-white transition">Browse
+                  Our Services</a>
+          </div>
+      </div>
+       </section>
+
+    <!-- footer -->
+ <footer class="bg-[#5da1c9] ">
+    <div class=" py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2 class="text-center text-lg/8 font-semibold text-gray-900">Proudly Partnered with the Pioneers of Travel</h2>
+        <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 place-items-center">
+          <img class="max-h-24 w-full object-contain" src="./media/taj-removebg-preview.png" alt="Transistor" />
+          <img class="max-h-24 w-full object-contain" src="./media/makemytrrip-removebg-preview.png" alt="Reform" />
+          <img class="max-h-24 w-full object-contain" src="./media/emirates-removebg-preview.png" alt="Tuple" />
+          <img class="max-h-24 w-full object-contain" src="./media/clubmahindra.png" alt="SavvyCal"  />
+          <img class="max-h-24 w-full object-contain" src="./media/thomascook.png" alt="Statamic" />
+        </div>
+      </div>
+    </div>
+    <!-- section2 -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 lg:px-20 py-10 text-center">
+      <div>
+        <h1 class="text-center text-3xl font-bold mb-2" style="font-family: 'Dancing Script', cursive;">Soul Routes</h1>
+        <h2 class="text-lg font-semibold">Head Office - Kochi</h2>
+        <p class="text-sm">2nd Floor,Bayview Complex, Marine Drive </p>
+        <p class="text-sm">Shanmugam Road,Kochi Kerala-682031</p>
+        <p class="text-sm">+91 4578912597</p>
+        <p class="text-sm"><a href="mailto:info@soulroutes.com" class="contact-mail">info@soulroutes.com</a></p>
+        <div class="flex justify-center space-x-6 text-3xl ">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <h1 class="text-center mt-10 text-3xl"> About Soul Routes</h1>
+        <p>Soul Routes curates unforgettable journeys across the globe. Whether it's a honeymoon in the Maldives, solo
+          travel in Europe, or hidden treasures in India — we make every trip soulful and seamless.</p>
+
+      </div>
+
+      <div class="text-center">
+        <div class="flex flex-col items-center space-y-2 text-xl ">
+          <h1 class="text-center text-3xl font-bold" style="font-family: 'Dancing Script', cursive;">Soul Routes</h1>
+         <a href="./index.html" class="hover:text-white transition-colors">Home</a>
+          <a href="./about.html" class="hover:text-white transition-colors">About Us</a>
+          <a href="./national.html" class="hover:text-white transition-colors">National</a>
+          <a href="./international.html" class="hover:text-white transition-colors">International</a>
+          <a href="./service.html" class="hover:text-white transition-colors">Services</a>
+          <a href="./login.html" class="hover:text-white transition-colors">Login</a>
+          <a href="./booking.html" class="hover:text-white transition-colors">Contact</a>
+        </div>
+
+      </div>
+
+      <section class="px-4  ">
+        <h2 class="text-3xl md:text-4xl font-bold text-center  text-[#2e2e2e]" style="font-family: 'Playfair', serif;">
+          <u> Our Branches</u>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+
+
+          <div class="flex flex-col items-center">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2"><u>Noida</u></h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.877752532691!2d76.31775010000001!3d9.944128200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0873d997c4c9b5%3A0x1adc8f73e23c6aa8!2sForum%20Kochi!5e0!3m2!1sen!2sin!4v1749921335448!5m2!1sen!2sin"
+              width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="mt-2 text-center text-sm font-medium ">5th Floor, Horizon Towers, Sector 6</p>
+            <p>Noida, UP– 201301 </p>
+
+            <p>+91 98765 43210</p>
+            <p><a href="mailto:north@soulroutes.com" class="contact-mail">north@soulroutes.com</a></p>
+          </div>
+
+          <div class="flex flex-col items-center text-justify">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2"><u>Trivandrum</u></h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8748218670153!2d76.3084032!3d10.0271873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080dafbed183bf%3A0x5951f316ba13a37e!2sLuLu%20International%20Shopping%20Mall!5e0!3m2!1sen!2sin!4v1749921379496!5m2!1sen!2sin"
+              width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="mt-2 text-center text-sm font-medium ">3rd Floor, Skyline Business Bay</p>
+            <p>Technopark Campus Road, </p>
+            <p> Tvm 695582</p>
+
+            <p>+91 98957 24680</p>
+            <p><a href="mailto: trivandrum@soulroutes.com" class="contact-mail"> trivandrum@soulroutes.com</a></p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <div class="flex justify-center items-center p-3">
+      <h6 class="text-center text-sm md:text-base">©2025 Soul Routes. All rights reserved. Crafted with ✈️ and ❤️ for
+        travel
+        lovers. </h6>
+    </div>
+      <div id="arrowUp" class="fixed bottom-6 right-6 z-50">
+  <a href="#SoulRoutes" 
+     class="bg-blue-600 hover:bg-blue-800 text-white p-4 rounded-full shadow-lg transition-all duration-300">
+    <i class="fa-solid fa-arrow-up text-xl"></i>
+  </a>
+</div>
+
+  </footer>
+
+    </section>
+
+
+
+
+
+
+  
+</body>
+
+</html>
