@@ -129,64 +129,7 @@
   overflow: hidden;
 }
 
-/* TEXT */
-.promo-text h2 {
-  color: #ff5722;
-  font-weight: 600;
-}
 
-.promo-text h1 span {
-  color: #16b19f;
-}
-
-/* FLIGHT CONTAINER */
-.promo-flight {
-  position: relative;
-  height: 320px;
-}
-
-/* FLIGHT IMAGE */
-.flight-stop {
-  width: 320px;
-  position: absolute;
-  right: -50px;     /* start outside */
-  bottom: -50px;
-  animation: flyAndStop 3s ease-out forwards;
-}
-.flight-stop {
-  width: 460px;       /* increase this */
-  max-width: none;    /* prevents Bootstrap shrinking */
-}
-
-
-/* KEYFRAMES */
-@keyframes flyAndStop {
-  0% {
-    transform: translateX(0) translateY(0) rotate(-10deg);
-    opacity: 0;
-  }
-
-  40% {
-    opacity: 1;
-  }
-
-  100% {
-   transform: translateX(-240px) translateY(-120px);
-    opacity: 1;
-  }
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .promo-flight {
-    height: 220px;
-  }
-
-   .flight-stop {
-    width: 240px;
-    right: -120px;
-  }
-}
 
     
 
@@ -655,31 +598,7 @@
     </div>
   </section>
   
-<section class="travelx-promo container py-5">
-  <div class="row align-items-center g-2">
 
-    <!-- LEFT TEXT -->
-    <div class="col-md-6 promo-text">
-      <h2>Enjoy Your Journey</h2>
-      <h1>Travel with <span>travelX</span> Tours</h1>
-      <p>
-        Seamless journeys, unforgettable destinations, and premium travel
-        experiences crafted just for you.
-      </p>
-<a href="tel:+919562565696" 
-   class="btn btn-primary mt-3" 
-   title="Call TravelX Support">
-  Contact Us
-</a>
-    </div>
-
-    <!-- RIGHT FLIGHT -->
-    <div class="col-md-6 promo-flight ">
-      <img src="./assets/aeroplane.png" alt="Flight" class="flight-stop">
-    </div>
-
-  </div>
-</section>
 
 
 
@@ -793,6 +712,8 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+
 
 </body>
 
