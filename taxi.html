@@ -279,6 +279,142 @@
         footer a:hover {
             text-decoration: underline;
         }
+/* Ticket Booking Cards */
+.ticket-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ticket-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.ticket-icon {
+  font-size: 3rem;
+  color: #f76c5e;
+  margin-bottom: 15px;
+}
+
+.ticket-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ticket-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.btn-success {
+  background-color: #25D366;
+  border: none;
+  font-weight: 500;
+}
+
+.btn-success:hover {
+  background-color: #1ebe5d;
+}
+.ticket-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: nowrap; 
+}
+
+.ticket-btns .btn {
+  white-space: nowrap; 
+  padding: 8px 14px;
+  font-size: 14px;
+}
+@media (max-width: 360px) {
+  .ticket-btns .btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+.ticket-btns .btn-success {
+  font-weight: 600;
+}
+.zigzag-section {
+  background: #fff8e1;
+  padding: 30px 0;
+}
+
+/* Row */
+.zigzag-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.zigzag-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Image block */
+.zigzag-img {
+  width: 50%;
+  height: 240px; /* 🔥 IMPORTANT: controls size */
+  clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
+}
+
+.zigzag-row.reverse .zigzag-img {
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 0 50%);
+}
+
+.zigzag-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content */
+.zigzag-content {
+  width: 50%;
+  padding: 25px;
+}
+
+.zigzag-content h3 {
+  font-size: 1.6rem;
+  color: #f76c5e;
+  margin-bottom: 8px;
+}
+
+.zigzag-content p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .zigzag-row,
+  .zigzag-row.reverse {
+    flex-direction: column;
+  }
+
+  .zigzag-img,
+  .zigzag-content {
+    width: 100%;
+    clip-path: none;
+  }
+
+  .zigzag-img {
+    height: 200px;
+  }
+
+  .zigzag-content {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+
 
 
     /* Animated plane hover effect */
@@ -422,6 +558,155 @@
   </div>
 </section>
 
+
+
+
+<!-- ================= TICKET BOOKING SECTION ================= -->
+<section class="py-5" style="background-color:#faf3e0;">
+  <div class="container">
+
+    <div class="section-heading text-center mb-5">
+      <h2>Ticket Booking Assistance</h2>
+      <p>
+        We assist you with hassle-free ticket booking for all major modes of travel.
+        Just call us – we’ll take care of the rest.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Air Ticket -->
+      <div class="col-md-6 col-lg-3">
+        <div class="ticket-card text-center p-4 h-100">
+          <i class="bi bi-airplane-engines ticket-icon"></i>
+          <h5>Air Tickets</h5>
+          <p>Domestic & international flight ticket assistance at best available fares.</p>
+          <div class="ticket-btns">
+  <a href="tel:+919562565676" class="btn btn-warning">
+    Call to Book
+  </a>
+
+  <a href="https://wa.me/919562565676" target="_blank" class="btn btn-success">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+</div>
+
+
+        </div>
+      </div>
+
+      <!-- Train Ticket -->
+      <div class="col-md-6 col-lg-3">
+        <div class="ticket-card text-center p-4 h-100">
+          <i class="bi bi-train-front ticket-icon"></i>
+          <h5>Train Tickets</h5>
+          <p>Quick and reliable train ticket support for your journeys across India.</p>
+          <div class="ticket-btns">
+  <a href="tel:+919562565676" class="btn btn-warning">
+    Call to Book
+  </a>
+
+  <a href="https://wa.me/919562565676" target="_blank" class="btn btn-success">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+</div>
+
+
+        </div>
+      </div>
+
+      <!-- Bus Ticket -->
+      <div class="col-md-6 col-lg-3">
+        <div class="ticket-card text-center p-4 h-100">
+          <i class="bi bi-bus-front ticket-icon"></i>
+          <h5>Bus Tickets</h5>
+          <p>Comfortable bus ticket arrangements for intercity and long-distance travel.</p>
+          <div class="ticket-btns">
+  <a href="tel:+919562565676" class="btn btn-warning">
+    Call to Book
+  </a>
+
+  <a href="https://wa.me/919562565676" target="_blank" class="btn btn-success">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+</div>
+
+
+        </div>
+      </div>
+
+      <!-- Other Travel Tickets -->
+      <div class="col-md-6 col-lg-3">
+        <div class="ticket-card text-center p-4 h-100">
+          <i class="bi bi-ticket-perforated ticket-icon"></i>
+          <h5>Other Travel Tickets</h5>
+          <p>Cruise, ferry, event & special travel ticket assistance on request.</p>
+          <div class="ticket-btns">
+  <a href="tel:+919562565676" class="btn btn-warning">
+    Call to Book
+  </a>
+
+  <a href="https://wa.me/919562565676" target="_blank" class="btn btn-success">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+</div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+>
+
+<!-- zig zag  -->
+
+<section class="zigzag-section" style="background-color:#f9f9f9;">
+
+  <!-- Munnar -->
+  <div class="zigzag-row">
+    <div class="zigzag-img">
+      <img src="./assets/munnar.jpg" alt="Munnar">
+    </div>
+    <div class="zigzag-content">
+      <h3>Munnar</h3>
+      <p>
+        Misty hills, lush tea plantations, and cool mountain air make Munnar
+        a perfect escape into nature’s calm beauty.
+      </p>
+    </div>
+  </div>
+
+  <!-- Kochi -->
+  <div class="zigzag-row reverse">
+    <div class="zigzag-img">
+      <img src="./assets/kochi.jpg" alt="Kochi">
+    </div>
+    <div class="zigzag-content">
+      <h3>Kochi</h3>
+      <p>
+        A vibrant blend of colonial charm, coastal beauty, culture, and
+        modern city life along the Arabian Sea.
+      </p>
+    </div>
+  </div>
+
+  <!-- Valparai -->
+  <div class="zigzag-row">
+    <div class="zigzag-img">
+      <img src="./assets/valparai.jpg" alt="Valparai">
+    </div>
+    <div class="zigzag-content">
+      <h3>Valparai</h3>
+      <p>
+        A hidden paradise surrounded by tea estates, waterfalls, and wildlife,
+        offering peace and breathtaking views.
+      </p>
+    </div>
+  </div>
+
+</section>
   <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/9562565676" class="whatsapp-float" target="_blank" id="whatsappToggle">
   <i class="fab fa-whatsapp"></i>
